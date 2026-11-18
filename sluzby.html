@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Služby — EnergetiCo</title>
+  <meta name="description" content="Technologie a řízení, projektování a příprava, technický dozor a péče. Vcelku i jednotlivě.">
+  <meta name="robots" content="noindex, nofollow"><!-- slepá šablona; před spuštěním odstranit -->
+  <script>try{var m=localStorage.getItem("motiv");if(m)document.documentElement.dataset.motiv=m}catch(e){}try{if(sessionStorage.getItem("prechod")){sessionStorage.removeItem("prechod");document.documentElement.classList.add("prichod")}}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/web.css">
+  <script type="module" src="assets/js/web.js"></script>
+</head>
+<body>
+
+<!-- ===== HLAVIČKA (stejná na všech stránkách) ===== -->
+<header class="hlavicka">
+  <div class="obal hlavicka__radek">
+    <div class="hlavicka__znacka">
+      <!-- Přepínač vzhledu jako v Kapse: v tmavém režimu slunce, ve světlém měsíc -->
+      <button class="motiv" type="button" aria-label="Přepnout světlý a tmavý režim" title="Přepnout světlý a tmavý režim">
+        <svg class="motiv__slunce" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg>
+        <svg class="motiv__mesic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.6 6.6 0 0 0 10.7 10.7z"/></svg>
+      </button>
+      <a class="logo" href="index.html"><span>EnergetiCo</span></a>
+    </div>
+    <nav class="menu" aria-label="Hlavní menu">
+      <a href="index.html">Úvod</a>
+      <a href="rodinne-domy.html">Rodinné domy</a>
+      <a href="bytove-domy-svj.html">Bytové domy a SVJ</a>
+      <a href="firmy.html">Firmy</a>
+      <a href="obce.html">Obce</a>
+      <a href="sluzby.html" aria-current="page">Služby</a>
+      <a href="o-nas.html">O nás</a>
+    </nav>
+    <div class="hlavicka__akce">
+      <a class="tl tl--bile" href="#kontakt">Probrat záměr</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false"></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== ÚVOD ===== -->
+<section class="uvod uvod--nizsi">
+  <div class="uvod__foto foto" data-soubor="sluzby-uvod.jpg">
+    <img src="assets/foto/sluzby-uvod.jpg" alt="" onerror="this.remove()">
+  </div>
+  <div class="uvod__clona"></div>
+  <div class="obal uvod__obsah">
+    <h1 class="uvod__nadpis">Od studie po servis.</h1>
+    <div>
+      <p class="uvod__veta">Technologie, projektování a dozor. Jako celek, nebo každá služba zvlášť.</p>
+      <nav class="segmenty" aria-label="Na této stránce">
+        <a class="segment segment--dolu" href="#technologie">Technologie a řízení</a>
+        <a class="segment segment--dolu" href="#projektovani">Projektování a příprava</a>
+        <a class="segment segment--dolu" href="#dozor">Dozor a péče</a>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<!-- Každá volba má dvě části: klik na NÁZEV segmentu otevře okno s popisem služby
+     (text se bere z řádku segmentové stránky, na který míří href), klik na PLUS ji přidá do poptávky.
+     „Poptat vybrané" otevře poptávku. Chování je v assets/js/web.js. -->
+<section class="sekce">
+  <div class="obal">
+    <div class="blok" id="technologie">
+      <div class="blok__foto foto foto--3x2 foto--r" data-soubor="sluzby-technologie.jpg">
+        <img src="assets/foto/sluzby-technologie.jpg" alt="" decoding="async" onerror="this.remove()">
+      </div>
+      <div>
+        <h2 class="nadpis">Technologie a řízení</h2>
+        <div class="sluzba"><h3>Fotovoltaika</h3><div class="cipy"><span class="volba"><a class="volba__nazev" href="rodinne-domy.html#fotovoltaika" title="Co to je">Rodinné domy</a><button class="cip volba__pridat" type="button" data-sluzba="Fotovoltaika" data-segment="rodinne-domy" aria-pressed="false" aria-label="Přidat do poptávky: Fotovoltaika, Rodinné domy"></button></span><span class="volba"><a class="volba__nazev" href="bytove-domy-svj.html#fotovoltaika" title="Co to je">SVJ</a><button class="cip volba__pridat" type="button" data-sluzba="Fotovoltaika" data-segment="bytove-domy-svj" aria-pressed="false" aria-label="Přidat do poptávky: Fotovoltaika, SVJ"></button></span><span class="volba"><a class="volba__nazev" href="firmy.html#fotovoltaika" title="Co to je">Firmy</a><button class="cip volba__pridat" type="button" data-sluzba="Fotovoltaika" data-segment="firmy" aria-pressed="false" aria-label="Přidat do poptávky: Fotovoltaika, Firmy"></button></span><span class="volba"><a class="volba__nazev" href="obce.html#technologie" title="Co to je">Obce</a><button class="cip volba__pridat" type="button" data-sluzba="Fotovoltaika" data-segment="obce" aria-pressed="false" aria-label="Přidat do poptávky: Fotovoltaika, Obce"></button></span></div></div>
+        <div class="sluzba"><h3>Baterie a BESS</h3><div class="cipy"><span class="volba"><a class="volba__nazev" href="rodinne-domy.html#baterie" title="Co to je">Rodinné domy</a><button class="cip volba__pridat" type="button" data-sluzba="Baterie a BESS" data-segment="rodinne-domy" aria-pressed="false" aria-label="Přidat do poptávky: Baterie a BESS, Rodinné domy"></button></span><span class="volba"><a class="volba__nazev" href="bytove-domy-svj.html#baterie" title="Co to je">SVJ</a><button class="cip volba__pridat" type="button" data-sluzba="Baterie a BESS" data-segment="bytove-domy-svj" aria-pressed="false" aria-label="Přidat do poptávky: Baterie a BESS, SVJ"></button></span><span class="volba"><a class="volba__nazev" href="firmy.html#bess" title="Co to je">Firmy</a><button class="cip volba__pridat" type="button" data-sluzba="Baterie a BESS" data-segment="firmy" aria-pressed="false" aria-label="Přidat do poptávky: Baterie a BESS, Firmy"></button></span><span class="volba"><a class="volba__nazev" href="obce.html#technologie" title="Co to je">Obce</a><button class="cip volba__pridat" type="button" data-sluzba="Baterie a BESS" data-segment="obce" aria-pressed="false" aria-label="Přidat do poptávky: Baterie a BESS, Obce"></button></span></div></div>
+        <div class="sluzba"><h3>Vytápění a chlazení</h3><div class="cipy"><span class="volba"><a class="volba__nazev" href="rodinne-domy.html#vytapeni" title="Co to je">Rodinné domy</a><button class="cip volba__pridat" type="button" data-sluzba="Vytápění a chlazení" data-segment="rodinne-domy" aria-pressed="false" aria-label="Přidat do poptávky: Vytápění a chlazení, Rodinné domy"></button></span><span class="volba"><a class="volba__nazev" href="bytove-domy-svj.html#vytapeni" title="Co to je">SVJ</a><button class="cip volba__pridat" type="button" data-sluzba="Vytápění a chlazení" data-segment="bytove-domy-svj" aria-pressed="false" aria-label="Přidat do poptávky: Vytápění a chlazení, SVJ"></button></span><span class="volba"><a class="volba__nazev" href="firmy.html#vytapeni" title="Co to je">Firmy</a><button class="cip volba__pridat" type="button" data-sluzba="Vytápění a chlazení" data-segment="firmy" aria-pressed="false" aria-label="Přidat do poptávky: Vytápění a chlazení, Firmy"></button></span><span class="volba"><a class="volba__nazev" href="obce.html#technologie" title="Co to je">Obce</a><button class="cip volba__pridat" type="button" data-sluzba="Vytápění a chlazení" data-segment="obce" aria-pressed="false" aria-label="Přidat do poptávky: Vytápění a chlazení, Obce"></button></span></div></div>
+        <div class="sluzba"><h3>Energetický management</h3><div class="cipy"><span class="volba"><a class="volba__nazev" href="bytove-domy-svj.html#energeticky-management" title="Co to je">SVJ</a><button class="cip volba__pridat" type="button" data-sluzba="Energetický management" data-segment="bytove-domy-svj" aria-pressed="false" aria-label="Přidat do poptávky: Energetický management, SVJ"></button></span><span class="volba"><a class="volba__nazev" href="firmy.html#energeticky-management" title="Co to je">Firmy</a><button class="cip volba__pridat" type="button" data-sluzba="Energetický management" data-segment="firmy" aria-pressed="false" aria-label="Přidat do poptávky: Energetický management, Firmy"></button></span><span class="volba"><a class="volba__nazev" href="obce.html#energeticky-management" title="Co to je">Obce</a><button class="cip volba__pridat" type="button" data-sluzba="Energetický management" data-segment="obce" aria-pressed="false" aria-label="Přidat do poptávky: Energetický management, Obce"></button></span></div></div>
+        <div class="sluzba"><h3>Sdílení elektřiny</h3><div class="cipy"><span class="volba"><a class="volba__nazev" href="bytove-domy-svj.html#sdileni" title="Co to je">SVJ</a><button class="cip volba__pridat" type="button" data-sluzba="Sdílení elektřiny" data-segment="bytove-domy-svj" aria-pressed="false" aria-label="Přidat do poptávky: Sdílení elektřiny, SVJ"></button></span><span class="volba"><a class="volba__nazev" href="obce.html#sdileni" title="Co to je">Obce</a><button class="cip volba__pridat" type="button" data-sluzba="Sdílení elektřiny" data-segment="obce" aria-pressed="false" aria-label="Přidat do poptávky: Sdílení elektřiny, Obce"></button></span></div></div>
+        <button class="tl tl--plne blok__poptat" type="button" data-otevrit-kos disabled>Poptat vybrané</button>
+      </div>
+    </div>
+    <div class="blok" id="projektovani">
+      <div class="blok__foto foto foto--3x2 foto--r" data-soubor="sluzby-projektovani.jpg">
+        <img src="assets/foto/sluzby-projektovani.jpg" alt="" decoding="async" onerror="this.remove()">
+      </div>
+      <div>
+        <h2 class="nadpis">Projektování a příprava</h2>
+        <div class="sluzba"><h3>Studie</h3><div class="cipy"><button class="cip" type="button" data-sluzba="Studie" aria-pressed="false">Vybrat</button></div></div>
+        <div class="sluzba"><h3>Projektová dokumentace</h3><div class="cipy"><button class="cip" type="button" data-sluzba="Projektová dokumentace" aria-pressed="false">Vybrat</button></div></div>
+        <div class="sluzba"><h3>Renovační pas</h3><div class="cipy"><button class="cip" type="button" data-sluzba="Renovační pas" aria-pressed="false">Vybrat</button></div></div>
+        <div class="sluzba"><h3>PENB</h3><div class="cipy"><button class="cip" type="button" data-sluzba="PENB" aria-pressed="false">Vybrat</button></div></div>
+        <div class="sluzba"><h3>Požárně bezpečnostní řešení</h3><div class="cipy"><button class="cip" type="button" data-sluzba="Požárně bezpečnostní řešení" aria-pressed="false">Vybrat</button></div></div>
+        <div class="sluzba"><h3>Statika</h3><div class="cipy"><button class="cip" type="button" data-sluzba="Statika" aria-pressed="false">Vybrat</button></div></div>
+        <div class="sluzba"><h3>Analýza rizik a návrh ochrany před bleskem</h3><div class="cipy"><button class="cip" type="button" data-sluzba="Analýza rizik a návrh ochrany před bleskem" aria-pressed="false">Vybrat</button></div></div>
+        <div class="sluzba"><h3>Příprava a vyřízení povolení</h3><div class="cipy"><button class="cip" type="button" data-sluzba="Příprava a vyřízení povolení" aria-pressed="false">Vybrat</button></div></div>
+        <div class="sluzba"><h3>Místní energetické koncepce</h3><div class="cipy"><span class="volba"><a class="volba__nazev" href="obce.html#koncepce" title="Co to je">Obce</a><button class="cip volba__pridat" type="button" data-sluzba="Místní energetické koncepce" data-segment="obce" aria-pressed="false" aria-label="Přidat do poptávky: Místní energetické koncepce, Obce"></button></span></div></div>
+        <button class="tl tl--plne blok__poptat" type="button" data-otevrit-kos disabled>Poptat vybrané</button>
+      </div>
+    </div>
+    <div class="blok" id="dozor">
+      <div class="blok__foto foto foto--3x2 foto--r" data-soubor="sluzby-dozor.jpg">
+        <img src="assets/foto/sluzby-dozor.jpg" alt="" decoding="async" onerror="this.remove()">
+      </div>
+      <div>
+        <h2 class="nadpis">Dozor a péče</h2>
+        <div class="sluzba"><h3>Technický dozor investora (TDI)</h3><div class="cipy"><span class="volba"><a class="volba__nazev" href="bytove-domy-svj.html#tdi" title="Co to je">SVJ</a><button class="cip volba__pridat" type="button" data-sluzba="Technický dozor investora (TDI)" data-segment="bytove-domy-svj" aria-pressed="false" aria-label="Přidat do poptávky: Technický dozor investora (TDI), SVJ"></button></span><span class="volba"><a class="volba__nazev" href="firmy.html#tdi" title="Co to je">Firmy</a><button class="cip volba__pridat" type="button" data-sluzba="Technický dozor investora (TDI)" data-segment="firmy" aria-pressed="false" aria-label="Přidat do poptávky: Technický dozor investora (TDI), Firmy"></button></span><span class="volba"><a class="volba__nazev" href="obce.html#tdi" title="Co to je">Obce</a><button class="cip volba__pridat" type="button" data-sluzba="Technický dozor investora (TDI)" data-segment="obce" aria-pressed="false" aria-label="Přidat do poptávky: Technický dozor investora (TDI), Obce"></button></span></div></div>
+        <div class="sluzba"><h3>Servis a sjednaná péče</h3><div class="cipy"><span class="volba"><a class="volba__nazev" href="rodinne-domy.html#pece" title="Co to je">Rodinné domy</a><button class="cip volba__pridat" type="button" data-sluzba="Servis a sjednaná péče" data-segment="rodinne-domy" aria-pressed="false" aria-label="Přidat do poptávky: Servis a sjednaná péče, Rodinné domy"></button></span><span class="volba"><a class="volba__nazev" href="bytove-domy-svj.html#pece" title="Co to je">SVJ</a><button class="cip volba__pridat" type="button" data-sluzba="Servis a sjednaná péče" data-segment="bytove-domy-svj" aria-pressed="false" aria-label="Přidat do poptávky: Servis a sjednaná péče, SVJ"></button></span><span class="volba"><a class="volba__nazev" href="firmy.html#pece" title="Co to je">Firmy</a><button class="cip volba__pridat" type="button" data-sluzba="Servis a sjednaná péče" data-segment="firmy" aria-pressed="false" aria-label="Přidat do poptávky: Servis a sjednaná péče, Firmy"></button></span><span class="volba"><a class="volba__nazev" href="obce.html#pece" title="Co to je">Obce</a><button class="cip volba__pridat" type="button" data-sluzba="Servis a sjednaná péče" data-segment="obce" aria-pressed="false" aria-label="Přidat do poptávky: Servis a sjednaná péče, Obce"></button></span></div></div>
+        <button class="tl tl--plne blok__poptat" type="button" data-otevrit-kos disabled>Poptat vybrané</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== KONTAKT (stejný na všech stránkách) ===== -->
+<section class="kontakt" id="kontakt">
+  <div class="obal kontakt__mrizka">
+    <div>
+      <h2 class="nadpis">Probereme záměr?</h2>
+      <a class="kontakt__telefon" href="tel:+420774845600">+420 774 845 600</a>
+      <a class="kontakt__mail" href="mailto:solary@arqe.cz">solary@arqe.cz</a>
+    </div>
+    <form class="formular" novalidate>
+      <div class="pole"><label for="f-jmeno">Jméno</label><input id="f-jmeno" name="jmeno" autocomplete="name" required></div>
+      <div class="pole"><label for="f-kontakt">Telefon nebo e-mail</label><input id="f-kontakt" name="kontakt" required></div>
+      <div class="pole">
+        <label for="f-segment">Poptávám pro</label>
+        <select id="f-segment" name="segment">
+          <option value="">Vyberte</option>
+          <option value="rodinne-domy">rodinný dům</option>
+          <option value="bytove-domy-svj">bytový dům nebo SVJ</option>
+          <option value="firmy">firmu</option>
+          <option value="obce">obec</option>
+        </select>
+      </div>
+      <div class="pole"><label for="f-sluzba">O co mám zájem (nepovinné)</label><input id="f-sluzba" name="sluzba"></div>
+      <div class="pole pole--cele"><label for="f-zprava">Zpráva</label><textarea id="f-zprava" name="zprava" rows="3"></textarea></div>
+      <div class="formular__pata">
+        <button class="tl tl--plne" type="submit">Odeslat</button>
+        <span class="formular__stav" role="status"></span>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== PATIČKA (stejná na všech stránkách) ===== -->
+<footer class="paticka">
+  <div class="obal">
+    <div class="paticka__mrizka">
+      <div>
+        <a class="logo" href="index.html"><span>EnergetiCo</span></a>
+        <p>Sídlíme v Brně, pracujeme po celé ČR.</p>
+      </div>
+      <div>
+        <h3>Pro koho</h3>
+        <ul>
+          <li><a href="rodinne-domy.html">Rodinné domy</a></li>
+          <li><a href="bytove-domy-svj.html">Bytové domy a SVJ</a></li>
+          <li><a href="firmy.html">Firmy</a></li>
+          <li><a href="obce.html">Obce</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Sídlo</h3>
+        <ul>
+          <li>Holandská 878/2, 639 00 Brno</li>
+          <li><a href="tel:+420774845600">+420 774 845 600</a></li>
+          <li><a href="mailto:solary@arqe.cz">solary@arqe.cz</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Fakturační údaje</h3>
+        <ul>
+          <li>EnergetiCo s.r.o.</li>
+          <li>IČ: 291 87 443</li>
+          <li>C 73801, Krajský soud v Brně</li>
+        </ul>
+      </div>
+    </div>
+    <div class="paticka__spodek">
+      <span>© 2026 EnergetiCo s.r.o.</span>
+      <span><a href="ochrana-udaju.html">Ochrana osobních údajů</a> · <a href="cookies.html">Cookies</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

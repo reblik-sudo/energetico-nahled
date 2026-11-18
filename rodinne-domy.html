@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rodinné domy — EnergetiCo</title>
+  <meta name="description" content="Fotovoltaika, baterie, tepelná čerpadla, ohřev vody a řízení spotřeby pro rodinné domy.">
+  <meta name="robots" content="noindex, nofollow"><!-- slepá šablona; před spuštěním odstranit -->
+  <script>try{var m=localStorage.getItem("motiv");if(m)document.documentElement.dataset.motiv=m}catch(e){}try{if(sessionStorage.getItem("prechod")){sessionStorage.removeItem("prechod");document.documentElement.classList.add("prichod")}}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/web.css">
+  <script type="module" src="assets/js/web.js"></script>
+</head>
+<body data-segment="rodinne-domy">
+
+<!-- ===== HLAVIČKA (stejná na všech stránkách) ===== -->
+<header class="hlavicka">
+  <div class="obal hlavicka__radek">
+    <div class="hlavicka__znacka">
+      <!-- Přepínač vzhledu jako v Kapse: v tmavém režimu slunce, ve světlém měsíc -->
+      <button class="motiv" type="button" aria-label="Přepnout světlý a tmavý režim" title="Přepnout světlý a tmavý režim">
+        <svg class="motiv__slunce" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg>
+        <svg class="motiv__mesic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.6 6.6 0 0 0 10.7 10.7z"/></svg>
+      </button>
+      <a class="logo" href="index.html"><span>EnergetiCo</span></a>
+    </div>
+    <nav class="menu" aria-label="Hlavní menu">
+      <a href="index.html">Úvod</a>
+      <a href="rodinne-domy.html" aria-current="page">Rodinné domy</a>
+      <a href="bytove-domy-svj.html">Bytové domy a SVJ</a>
+      <a href="firmy.html">Firmy</a>
+      <a href="obce.html">Obce</a>
+      <a href="sluzby.html">Služby</a>
+      <a href="o-nas.html">O nás</a>
+    </nav>
+    <div class="hlavicka__akce">
+      <a class="tl tl--bile" href="#kontakt">Probrat záměr</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false"></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== ÚVOD ===== -->
+<section class="uvod uvod--nizsi">
+  <div class="uvod__foto foto" data-soubor="rodinne-domy-uvod.jpg">
+    <img src="assets/foto/rodinne-domy-uvod.jpg" alt="" onerror="this.remove()">
+  </div>
+  <div class="uvod__clona"></div>
+  <div class="obal uvod__obsah">
+    <h1 class="uvod__nadpis">Dům, který si energii vyrobí sám.</h1>
+    <div>
+      <p class="uvod__veta">Fotovoltaika, baterie, tepelné čerpadlo a řízení spotřeby. Navržené jako jeden celek.</p>
+      <nav class="segmenty" aria-label="Na této stránce">
+        <a class="segment segment--dolu" href="#kontakt">Probrat záměr</a>
+        <a class="segment segment--dolu" href="#nabidka">Nabídka</a>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<!-- Každý řádek má kotvu (id). Stránka Služby na ně odkazuje přímo, např. rodinne-domy.html#fotovoltaika -->
+<section class="sekce" id="nabidka">
+  <div class="obal">
+    <div class="sekce__hlava">
+      <h2 class="nadpis">Co v domě zajistíme</h2>
+    </div>
+    <div class="nabidka">
+      <article class="nabidka__radek" id="fotovoltaika">
+        <h3>Fotovoltaika</h3>
+        <p>Vlastní elektřina ze střechy.</p>
+        <a class="tl tl--obrys" href="#kontakt" data-sluzba="Fotovoltaika">Poptat</a>
+      </article>
+      <article class="nabidka__radek" id="baterie">
+        <h3>Baterie</h3>
+        <p>Polední výroba vydrží do večera.</p>
+        <a class="tl tl--obrys" href="#kontakt" data-sluzba="Baterie">Poptat</a>
+      </article>
+      <article class="nabidka__radek" id="vytapeni">
+        <h3>Vytápění a tepelná čerpadla</h3>
+        <p>Teplo z elektřiny, kterou dům sám vyrobí.</p>
+        <a class="tl tl--obrys" href="#kontakt" data-sluzba="Vytápění a tepelná čerpadla">Poptat</a>
+      </article>
+      <article class="nabidka__radek" id="ohrev-vody">
+        <h3>Ohřev vody</h3>
+        <p>Teplá voda z přebytků fotovoltaiky.</p>
+        <a class="tl tl--obrys" href="#kontakt" data-sluzba="Ohřev vody">Poptat</a>
+      </article>
+      <article class="nabidka__radek" id="rizeni-spotreby">
+        <h3>Řízení spotřeby</h3>
+        <p>Spotřebiče běží, když svítí slunce.</p>
+        <a class="tl tl--obrys" href="#kontakt" data-sluzba="Řízení spotřeby">Poptat</a>
+      </article>
+      <article class="nabidka__radek" id="priprava">
+        <h3>Příprava a povolení</h3>
+        <p>Projekt i připojení k síti vyřídíme.</p>
+        <a class="tl tl--obrys" href="#kontakt" data-sluzba="Příprava a povolení">Poptat</a>
+      </article>
+      <article class="nabidka__radek" id="pece">
+        <h3>Sjednaná péče</h3>
+        <p>Servis a kontroly i po předání.</p>
+        <a class="tl tl--obrys" href="#kontakt" data-sluzba="Sjednaná péče">Poptat</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Z data/reference.json — položky se segmentem "rodinne-domy" -->
+<section class="sekce sekce--plocha" id="realizace">
+  <div class="obal">
+    <div class="sekce__hlava">
+      <h2 class="nadpis">Realizace a recenze</h2>
+    </div>
+    <div class="reference" data-reference="rodinne-domy"></div>
+  </div>
+</section>
+
+<section class="sekce" id="spoluprace">
+  <div class="obal">
+    <div class="sekce__hlava">
+      <h2 class="nadpis">Jak spolupráce probíhá</h2>
+    </div>
+    <ol class="kroky">
+      <li><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M7 31 32 10l25 21"/><path d="M14 26v29h36V26"/><path d="M35 30 26 43h11l-6 11"/></svg><h3>Seznámení se situací</h3><p>Prohlídka, spotřeba, cíle.</p></li>
+      <li><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M9 9h46v46H9z"/><path d="M21 38V27l11-9 11 9v11z"/><path d="M21 46h22M21 43v6M43 43v6"/></svg><h3>Návrh</h3><p>Řešení, rozsah, přínos.</p></li>
+      <li><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 54 20 30h32L40 54z"/><path d="M14 42h32M31 30 19 54M42 30 30 54"/><circle cx="48" cy="14" r="5"/><path d="M48 3v3M37 14h3M56 14h3M40 6l2 2M56 6l-2 2"/></svg><h3>Příprava a realizace</h3><p>Povolení, dodavatelé, stavba.</p></li>
+      <li><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M7 12h42v32H7z"/><path d="M7 28h42M21 12v32M35 12v32"/><circle class="vypln" cx="46" cy="46" r="13"/><path d="m39 46 5 5 9-10"/></svg><h3>Sjednaná péče</h3><p>Servis a pravidelné kontroly.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- Otázky jsou zástupné, znění a odpovědi dodá EnergetiCo -->
+<section class="sekce sekce--plocha" id="otazky">
+  <div class="obal">
+    <div class="sekce__hlava">
+      <h2 class="nadpis">Časté otázky</h2>
+    </div>
+    <div class="otazky">
+      <details><summary>Hodí se fotovoltaika na každou střechu?</summary><p>Odpověď doplní EnergetiCo.</p></details>
+      <details><summary>Jak dlouho trvá realizace?</summary><p>Odpověď doplní EnergetiCo.</p></details>
+      <details><summary>Co se stane při výpadku proudu?</summary><p>Odpověď doplní EnergetiCo.</p></details>
+      <details><summary>Kdo vyřídí připojení k síti?</summary><p>Odpověď doplní EnergetiCo.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sekce" id="dalsi">
+  <div class="obal">
+    <div class="sekce__hlava">
+      <h2 class="nadpis">Řešíme i</h2>
+    </div>
+    <nav class="dalsi">
+      <a href="bytove-domy-svj.html"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 42V7h28v35"/><path d="M5 42h38"/><path d="M17 15h4M27 15h4M17 23h4M27 23h4M17 31h4M27 31h4"/></svg><span>Bytové domy a SVJ</span></a>
+      <a href="firmy.html"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M5 42V19l12 8v-8l12 8v-8l14 9v14z"/><path d="M13 34h4M23 34h4M33 34h4"/></svg><span>Firmy</span></a>
+      <a href="obce.html"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 42V25h32v17"/><path d="M19 25V13l5-7 5 7v12"/><path d="M4 42h40"/><path d="M22 42v-8h4v8"/><path d="M13 32h3M32 32h3"/></svg><span>Obce</span></a>
+    </nav>
+  </div>
+</section>
+
+<!-- ===== KONTAKT (stejný na všech stránkách) ===== -->
+<section class="kontakt" id="kontakt">
+  <div class="obal kontakt__mrizka">
+    <div>
+      <h2 class="nadpis">Probereme záměr?</h2>
+      <a class="kontakt__telefon" href="tel:+420774845600">+420 774 845 600</a>
+      <a class="kontakt__mail" href="mailto:solary@arqe.cz">solary@arqe.cz</a>
+    </div>
+    <form class="formular" novalidate>
+      <div class="pole"><label for="f-jmeno">Jméno</label><input id="f-jmeno" name="jmeno" autocomplete="name" required></div>
+      <div class="pole"><label for="f-kontakt">Telefon nebo e-mail</label><input id="f-kontakt" name="kontakt" required></div>
+      <div class="pole">
+        <label for="f-segment">Poptávám pro</label>
+        <select id="f-segment" name="segment">
+          <option value="">Vyberte</option>
+          <option value="rodinne-domy">rodinný dům</option>
+          <option value="bytove-domy-svj">bytový dům nebo SVJ</option>
+          <option value="firmy">firmu</option>
+          <option value="obce">obec</option>
+        </select>
+      </div>
+      <div class="pole"><label for="f-sluzba">O co mám zájem (nepovinné)</label><input id="f-sluzba" name="sluzba"></div>
+      <div class="pole pole--cele"><label for="f-zprava">Zpráva</label><textarea id="f-zprava" name="zprava" rows="3"></textarea></div>
+      <div class="formular__pata">
+        <button class="tl tl--plne" type="submit">Odeslat</button>
+        <span class="formular__stav" role="status"></span>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== PATIČKA (stejná na všech stránkách) ===== -->
+<footer class="paticka">
+  <div class="obal">
+    <div class="paticka__mrizka">
+      <div>
+        <a class="logo" href="index.html"><span>EnergetiCo</span></a>
+        <p>Sídlíme v Brně, pracujeme po celé ČR.</p>
+      </div>
+      <div>
+        <h3>Pro koho</h3>
+        <ul>
+          <li><a href="rodinne-domy.html">Rodinné domy</a></li>
+          <li><a href="bytove-domy-svj.html">Bytové domy a SVJ</a></li>
+          <li><a href="firmy.html">Firmy</a></li>
+          <li><a href="obce.html">Obce</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Sídlo</h3>
+        <ul>
+          <li>Holandská 878/2, 639 00 Brno</li>
+          <li><a href="tel:+420774845600">+420 774 845 600</a></li>
+          <li><a href="mailto:solary@arqe.cz">solary@arqe.cz</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Fakturační údaje</h3>
+        <ul>
+          <li>EnergetiCo s.r.o.</li>
+          <li>IČ: 291 87 443</li>
+          <li>C 73801, Krajský soud v Brně</li>
+        </ul>
+      </div>
+    </div>
+    <div class="paticka__spodek">
+      <span>© 2026 EnergetiCo s.r.o.</span>
+      <span><a href="ochrana-udaju.html">Ochrana osobních údajů</a> · <a href="cookies.html">Cookies</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

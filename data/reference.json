@@ -1,0 +1,161 @@
+{
+  "_navod": "Každá reference se zadává jen tady. 'segment' určuje, na které segmentové stránce se ukáže (rodinne-domy | bytove-domy-svj | firmy | obce). 'homepage': true ji přidá i do výběru na úvodní stránce. Fotka leží v assets/foto/. POZOR: všechny záznamy níže jsou VYMYŠLENÉ pro náhled designu — místa, čísla, jména i recenze. Před spuštěním nahradit skutečnými realizacemi EnergetiCo.",
+  "reference": [
+    {
+      "id": "ukazka-rd-1",
+      "segment": "rodinne-domy",
+      "homepage": true,
+      "nazev": "Rodinný dům s fotovoltaikou a baterií",
+      "misto": "Lysá nad Labem, Středočeský kraj · 2025",
+      "popis": "Fotovoltaika 9,6 kWp na jižní straně střechy, baterie 11 kWh a řízení ohřevu vody z přebytků. Od prohlídky po spuštění sedm týdnů.",
+      "foto": "ref-rd-1.jpg",
+      "recenze": {
+        "text": "Na první schůzce jsme dostali srozumitelný návrh a přesně ten se pak postavil. Od jara do podzimu si elektřinu z velké části vyrábíme sami.",
+        "autor": "Petr N., majitel domu"
+      }
+    },
+    {
+      "id": "ukazka-rd-2",
+      "segment": "rodinne-domy",
+      "homepage": false,
+      "nazev": "Bungalov s tepelným čerpadlem",
+      "misto": "Slavkov u Brna, Jihomoravský kraj · 2025",
+      "popis": "Tepelné čerpadlo vzduch–voda místo plynového kotle a fotovoltaika 7,4 kWp. Řízení spotřeby pouští čerpadlo hlavně v době výroby.",
+      "foto": "ref-rd-2.jpg",
+      "recenze": {
+        "text": "Bál jsem se, že výměna kotle rozkope půl domu. Trvalo to čtyři dny a topit jsme nepřestali.",
+        "autor": "Martin K., majitel domu"
+      }
+    },
+    {
+      "id": "ukazka-rd-3",
+      "segment": "rodinne-domy",
+      "homepage": false,
+      "nazev": "Venkovský dům, panely na stodole",
+      "misto": "Nová Paka, Královéhradecký kraj · 2024",
+      "popis": "Střecha domu zůstala beze změny, fotovoltaika 8,2 kWp je na sousední stodole. Baterie 8 kWh a příprava na dobíjení auta.",
+      "foto": "ref-rd-3.jpg",
+      "recenze": {
+        "text": "Chtěli jsme zachovat vzhled domu ze silnice. Navrhli stodolu a vyšlo to výkonem i na pohled.",
+        "autor": "Jana a Tomáš V., majitelé domu"
+      }
+    },
+    {
+      "id": "ukazka-svj-1",
+      "segment": "bytove-domy-svj",
+      "homepage": true,
+      "nazev": "Panelový dům, 40 bytů",
+      "misto": "Brno-Bystrc, Jihomoravský kraj · 2025",
+      "popis": "Fotovoltaika 49 kWp na ploché střeše a sdílení elektřiny mezi 40 byty a společnými prostory. Podklady pro shromáždění, výběr dodavatele i dozor na stavbě.",
+      "foto": "ref-svj-1.jpg",
+      "recenze": {
+        "text": "Výbor dostal podklady, kterým rozuměl každý vlastník. Na shromáždění prošel záměr napoprvé.",
+        "autor": "Ing. Lenka H., předsedkyně výboru SVJ"
+      }
+    },
+    {
+      "id": "ukazka-svj-2",
+      "segment": "bytove-domy-svj",
+      "homepage": false,
+      "nazev": "Oprava střechy a fotovoltaika v jedné stavbě",
+      "misto": "Hradec Králové, Královéhradecký kraj · 2024",
+      "popis": "Nová hydroizolace střechy a hned na ni fotovoltaika 62 kWp na zátěžové konstrukci bez kotvení do pláště. Jedno lešení, jeden harmonogram.",
+      "foto": "ref-svj-2.jpg",
+      "recenze": {
+        "text": "Původně jsme chtěli jen opravit střechu. Spojením obou akcí jsme ušetřili jedno stavební léto.",
+        "autor": "Pavel D., člen výboru SVJ"
+      }
+    },
+    {
+      "id": "ukazka-svj-3",
+      "segment": "bytove-domy-svj",
+      "homepage": false,
+      "nazev": "Cihlový dům z padesátých let",
+      "misto": "Olomouc, Olomoucký kraj · 2025",
+      "popis": "Tepelná čerpadla místo dožilé plynové kotelny a fotovoltaika 28 kWp na dvorní straně střechy. Měření spotřeby po bytech a podklady pro rozúčtování.",
+      "foto": "ref-svj-3.jpg",
+      "recenze": {
+        "text": "Oceňujeme hlavně energetický management. Každý měsíc vidíme, jak dům funguje, a máme podle čeho rozhodovat.",
+        "autor": "Mgr. Eva S., předsedkyně výboru SVJ"
+      }
+    },
+    {
+      "id": "ukazka-firma-1",
+      "segment": "firmy",
+      "homepage": true,
+      "nazev": "Výrobní hala s kancelářemi",
+      "misto": "Žďár nad Sázavou, Kraj Vysočina · 2025",
+      "popis": "Fotovoltaika 420 kWp na střeše haly a měření spotřeby po jednotlivých linkách. Stavba proběhla za plného provozu.",
+      "foto": "ref-firma-1.jpg",
+      "recenze": {
+        "text": "Poprvé vidíme spotřebu po linkách, ne jen na faktuře. Podle těch dat jsme naplánovali další investice.",
+        "autor": "Ing. Radek M., výrobní ředitel"
+      }
+    },
+    {
+      "id": "ukazka-firma-2",
+      "segment": "firmy",
+      "homepage": false,
+      "nazev": "Bateriové úložiště u výrobního areálu",
+      "misto": "Uherské Hradiště, Zlínský kraj · 2025",
+      "popis": "Úložiště BESS 600 kWh ve třech kontejnerech napojené na stávající fotovoltaiku. Řízení vykrývá odběrové špičky ranní směny.",
+      "foto": "ref-firma-2.jpg",
+      "recenze": {
+        "text": "Špičky při rozjezdu směny nás stály rezervovaný příkon. Úložiště je srovnalo.",
+        "autor": "Jiří P., vedoucí údržby"
+      }
+    },
+    {
+      "id": "ukazka-firma-3",
+      "segment": "firmy",
+      "homepage": false,
+      "nazev": "Logistický sklad",
+      "misto": "Plzeň, Plzeňský kraj · 2024",
+      "popis": "Fotovoltaika 990 kWp na střeše skladu, projektová příprava a připojení k distribuční soustavě. Technický dozor po celou dobu stavby.",
+      "foto": "ref-firma-3.jpg",
+      "recenze": {
+        "text": "Termín připojení byl pro nás klíčový a dodrželi ho. Dozor na stavbě se vyplatil několikrát.",
+        "autor": "Mgr. Alena B., správa nemovitostí"
+      }
+    },
+    {
+      "id": "ukazka-obec-1",
+      "segment": "obce",
+      "homepage": false,
+      "nazev": "Základní škola",
+      "misto": "Moravská Nová Ves, Jihomoravský kraj · 2025",
+      "popis": "Fotovoltaika 48 kWp na střeše školy a sdílení přebytků do mateřské školy a obecního úřadu. O prázdninách elektřina nepropadá, využijí ji ostatní budovy.",
+      "foto": "ref-obec-1.jpg",
+      "recenze": {
+        "text": "Škola má největší střechu v obci a v létě je prázdná. Teď její elektřina svítí i na úřadě.",
+        "autor": "Bc. Josef R., starosta"
+      }
+    },
+    {
+      "id": "ukazka-obec-2",
+      "segment": "obce",
+      "homepage": false,
+      "nazev": "Obecní úřad a energetická koncepce",
+      "misto": "Police nad Metují, Královéhradecký kraj · 2024",
+      "popis": "Místní energetická koncepce se seřazenými investicemi na osm let a první krok podle ní: fotovoltaika 22 kWp a tepelné čerpadlo na úřadě.",
+      "foto": "ref-obec-2.jpg",
+      "recenze": {
+        "text": "Zastupitelstvo konečně rozhoduje podle plánu, ne podle toho, na co zrovna vyjde dotace.",
+        "autor": "Ing. Marie T., místostarostka"
+      }
+    },
+    {
+      "id": "ukazka-obec-3",
+      "segment": "obce",
+      "homepage": false,
+      "nazev": "Hasičská zbrojnice a kulturní dům",
+      "misto": "Vrchlabí, Královéhradecký kraj · 2025",
+      "popis": "Fotovoltaika 30 kWp s baterií 20 kWh, zbrojnice zůstává v provozu i při výpadku sítě. Energetický management hlídá spotřebu obou budov.",
+      "foto": "ref-obec-3.jpg",
+      "recenze": {
+        "text": "Zbrojnice musí fungovat vždy. Že to při výpadku zvládne sama, jsme si vyzkoušeli hned první zimu.",
+        "autor": "Karel J., velitel jednotky"
+      }
+    }
+  ]
+}
