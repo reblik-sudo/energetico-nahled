@@ -244,7 +244,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .uvod--nizsi { min-height: min(86svh, 900px); }
 .uvod__foto { position: absolute; inset: 0; }
 .uvod__foto::after { top: 112px; left: var(--okraj); }
-/* Dvě fotky téhož místa: pohled z dálky se pomalu přibližuje a prolne do záběru zblízka. */
+/* Dva snímky v úvodu homepage: každý se pomalu přibližuje a prolínají se do sebe. */
 .uvod__foto img { transform-origin: 50% 62%; animation: uvod-dalka 18s ease-in-out infinite; }
 .uvod__foto .uvod__druha { z-index: 2; opacity: 0; transform-origin: 50% 55%; animation: uvod-blizko 18s ease-in-out infinite; }
 .uvod__foto img:only-of-type { animation: none; }
