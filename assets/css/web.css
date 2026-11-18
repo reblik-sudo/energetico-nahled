@@ -4,6 +4,7 @@
 :root {
   --cervena: #ed050e;
   --cervena-tmava: #c70009;
+  --logo-najeti: #e3645b; /* barva loga pod myší */
   --antracit: #171b24;
   --antracit-2: #20252f;
 
@@ -145,7 +146,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
           mask: url(../img/logo.svg) center / contain no-repeat;
 }
 .logo { transition: background-color .2s; }
-.logo:hover, .logo:focus-visible { background-color: var(--cervena); }
+.logo:hover, .logo:focus-visible { background-color: var(--logo-najeti); }
 /* Přepínač vzhledu před logem: jen ikona. V tmavém režimu slunce, ve světlém měsíc. */
 .hlavicka__znacka { display: flex; align-items: center; gap: 12px; flex: none; }
 .motiv {
